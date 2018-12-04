@@ -1,18 +1,19 @@
 package com.tom;
 
-import com.sun.jndi.url.corbaname.corbanameURLContextFactory;
-
 //import java.util.Random;
 
 public class PokerGame {
 
 	public static void main(String[] args) {
+		Poker all = new Poker();
+		all.printAll();
+		System.out.println();
+		all.shuffle();
+		
 		
 //		Cards c = new Cards(5);
 //		Cards[] cards = new Cards[52];
-		
-		Poker all = new Poker();
-		all.printAll();
+			
 				
 	/*int[] nums =new int[5]; //索引值從0~4
 		nums[0]=99;  //預設值為0
