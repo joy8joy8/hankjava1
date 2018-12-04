@@ -1,40 +1,30 @@
 package com.tom;
 
-public class Poker {
+import java.util.Random;
 
-	int[] number;
-	
-	public Poker(int[]number) {
-		this.number=number;
+public class Poker {
+Cards [] card=new Cards[52];
+	public void shuffle(){
+		for(int i=0;i<52;i++){
+		int c=new Random().nextInt(52);	
+			//a=card[i]
+			//b=card[r]
 		
+		}
 	}
-		
+
 	public void printAll() {
-		for(int i=0;i<13;i++){
-			char c=0x2663;
-			System.out.print(((number[i]%13)+1));
-			System.out.print(c+"\t");
-		}
-		System.out.println();
-		for(int i=13;i>12&&i<26;i++){
-			char d=0x2666;
-			System.out.print(((number[i]%13)+1));
-			System.out.print(d+"\t");
-		}
-		System.out.println();
-		for(int i=26;i>25&&i<39;i++){
-			char h=0x2665;
-			System.out.print(((number[i]%13)+1));
-			System.out.print(h+"\t");
-		}		
-		System.out.println();
-		for(int i=39;i>38&&i<52;i++){
-			char s=0x2660;
-			System.out.print(((number[i]%13)+1));
-			System.out.print(s+"\t");
-		}
-		
+		for(int i=0;i<52;i++){
+			//System.out.print(number[i]);
+			//System.out.print((i%13)+1);
+			card[i]=new Cards(i);
+			System.out.print(card[i].get());
+			if(i%13==12){
+				System.out.println();
+			}
+
 	}
 			
-			
+	}
 }
+

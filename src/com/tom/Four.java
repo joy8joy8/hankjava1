@@ -20,11 +20,10 @@ public class Four {
 			return 'H';
 		case 2:
 			return 'D';
-	/*	case 3:
-			return'C';*/
-		default:
+		case 3:
 			return 'C';
 		}
+		return 0;  //要有一個漏掉值時可以用的東西 或是用default
 	}
 	public void gameResult(){
 		System.out.printf(number+"\t"+degree()+"\n");
