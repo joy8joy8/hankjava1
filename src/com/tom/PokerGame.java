@@ -5,14 +5,22 @@ package com.tom;
 public class PokerGame {
 
 	public static void main(String[] args) {
-		Poker all = new Poker();
-		all.printAll();
-		System.out.println();
-		all.shuffle();
+//		Poker all = new Poker();
+		Pocker2 all = new Pocker2();
+//		all.printAll();
+//		System.out.println();
+//		all.shuffle();
+//		System.out.println();
+//		all.add();
 		
+		String s="fifiif";
+		s.toUpperCase();
+		System.out.println(s);
+		s="sss";
+		System.out.println(s);
 		
 //		Cards c = new Cards(5);
-//		Cards[] cards = new Cards[52];
+//		Cards[] cards = new Cards[52];     //參照資料型態陣列的預設值是null 
 			
 				
 	/*int[] nums =new int[5]; //索引值從0~4

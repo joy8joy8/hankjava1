@@ -1,9 +1,11 @@
 package com.tom;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Poker {
-Cards [] card=new Cards[52];
+int a;
+Cards [] card=new Cards[52*a];
 	public void shuffle(){
 		for(int i=0;i<52;i++){
 			int c=new Random().nextInt(52);	
@@ -20,6 +22,7 @@ Cards [] card=new Cards[52];
 	}
 
 	public void printAll() {
+		a=1;
 		for(int i=0;i<52;i++){
 			//System.out.print(number[i]);
 			//System.out.print((i%13)+1);
@@ -29,8 +32,20 @@ Cards [] card=new Cards[52];
 				System.out.println();
 			}
 
-	}
+		}
 			
 	}
+	public void add(){
+		a=2;
+		for(int i=0;i<52*a;i++){
+			card[i]=new Cards(i);
+			System.out.print(card[i].get());
+			if(i%13==12){
+				System.out.println();
+			}
+
+		}
+	}
 }
+
 
